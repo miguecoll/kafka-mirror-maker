@@ -11,7 +11,7 @@ run.sh script require the following variables:
 * GROUPID="xxxx"
 * WHITELIST="xxxx" 
 
-NOTE: $WHITELIST will be used the same way as defined on kafka mirror-maker documentation. [Kafka Documentation]https://kafka.apache.org/documentation/#basic_ops_mirror_maker)
+NOTE: $WHITELIST is bypassed to kafka mirror-maker. Therfore follow the recomendations on the official documentation. [Kafka Documentation](https://kafka.apache.org/documentation/#basic_ops_mirror_maker)
 
 >Note that we specify the list of topics with the --whitelist option. This option allows any regular expression using Java-style regular expressions. So you could mirror two topics named A and B using --whitelist 'A|B'. Or you could mirror all topics using --whitelist '*'. Make sure to quote any regular expression to ensure the shell doesn't try to expand it as a file path. For convenience we allow the use of ',' instead of '|' to specify a list of topics.
  
