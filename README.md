@@ -11,7 +11,7 @@ run.sh script require the following variables:
 * GROUPID="xxxx"
 * WHITELIST="xxxx" have to be 
 
-the execution will create a /etc/kafka-mirror/consumer.properties and /etc/kafka-mirror/producer.properties and launch mirror-maker using:
+the execution will create a /etc/mirror-maker/consumer.properties and /etc/mirror-maker/producer.properties and launch mirror-maker using:
 ```
 /opt/kafka/bin/kafka-mirror-maker.sh --whitelist ${WHITELIST} --abort.on.send.failure true --new.consumer --producer.config /etc/mirror-maker/producer.properties --consumer.config /etc/mirror-maker/consumer.properties
 ```
